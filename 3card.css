@@ -1,3 +1,27 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: #EFEFEF;
@@ -15,6 +39,18 @@ body {
     display: flex;
 }
 
+.card1 {
+    padding: 50px
+}
+
+.header-container {
+    margin-top: 30px; 
+}
+
+.content-container {
+    margin-top: 30px;
+}
+
 .outer-card-frame1 {
     background-color: hsl(31, 77%, 52%);
 }
@@ -27,10 +63,6 @@ body {
     background-color: hsl(179, 100%, 13%);
 }
 
-.card {
-    padding: 50px
-}
-
 .header-container p{
     font-family: 'Big Shoulders Display', sans-serif;
     font-size: 32px;
@@ -39,8 +71,8 @@ body {
 
 .content-container p {
     color: hsla(0, 0%, 100%, 0.75);
-    line-height: 1.5;
-    font-size: 15px;
+    line-height: 1.75;
+    font-size: 13px;
 }
 
 button {
@@ -105,7 +137,8 @@ button:hover {
     }
 
     button {
-        margin-top: 8px;
+        margin-top: 30px;
+        font-size: 15px;
     }
 }
 
@@ -129,5 +162,6 @@ button:hover {
 
     button {
         margin-top: 80px;
+        font-size: 15px;
     }
 }
